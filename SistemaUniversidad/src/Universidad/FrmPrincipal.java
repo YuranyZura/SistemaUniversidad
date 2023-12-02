@@ -109,6 +109,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMProgramas.setText("PROGRAMAS");
 
         jMenuItem6.setText("Agregar");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMProgramas.add(jMenuItem6);
 
         jMenuItem7.setText("Lista");
@@ -124,6 +129,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMMatriculas.setText("MATRICULAS");
 
         jMenuItem8.setText("Agregar");
+        jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem8ActionPerformed(evt);
+            }
+        });
         jMMatriculas.add(jMenuItem8);
 
         jMenuBar1.add(jMMatriculas);
@@ -196,6 +206,16 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmListarProgramas frm = new FrmListarProgramas();
         frm.setVisible(true);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        FrmMatriculas frm = new FrmMatriculas();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        FrmAgregarPrograma frm = new FrmAgregarPrograma();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
