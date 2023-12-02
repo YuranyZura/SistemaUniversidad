@@ -89,6 +89,7 @@ public class FrmAgregarAlumno extends javax.swing.JFrame {
         txtCorreo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtCorreo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        btnAgregarAlumno.setBackground(new java.awt.Color(204, 204, 204));
         btnAgregarAlumno.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAgregarAlumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/añadir.png"))); // NOI18N
         btnAgregarAlumno.setText("Agregar");
@@ -98,6 +99,7 @@ public class FrmAgregarAlumno extends javax.swing.JFrame {
             }
         });
 
+        btnRegresar.setBackground(new java.awt.Color(204, 204, 204));
         btnRegresar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/regresar.png"))); // NOI18N
         btnRegresar.setText("Regresar");
