@@ -23,8 +23,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMProfesores = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        jMAgregarProfesor = new javax.swing.JMenuItem();
+        jMListaProfesores = new javax.swing.JMenuItem();
         jMProgramas = new javax.swing.JMenu();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
@@ -88,11 +88,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMProfesores.setText("PROFESOR ");
 
-        jMenuItem4.setText("Agregar ");
-        jMProfesores.add(jMenuItem4);
+        jMAgregarProfesor.setText("Agregar ");
+        jMAgregarProfesor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMAgregarProfesorActionPerformed(evt);
+            }
+        });
+        jMProfesores.add(jMAgregarProfesor);
 
-        jMenuItem5.setText("Lista");
-        jMProfesores.add(jMenuItem5);
+        jMListaProfesores.setText("Lista");
+        jMListaProfesores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMListaProfesoresActionPerformed(evt);
+            }
+        });
+        jMProfesores.add(jMListaProfesores);
 
         jMenuBar1.add(jMProfesores);
 
@@ -102,6 +112,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMProgramas.add(jMenuItem6);
 
         jMenuItem7.setText("Lista");
+        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem7ActionPerformed(evt);
+            }
+        });
         jMProgramas.add(jMenuItem7);
 
         jMenuBar1.add(jMProgramas);
@@ -167,6 +182,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
      }
     }//GEN-LAST:event_jMenuItem9ActionPerformed
 
+    private void jMAgregarProfesorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMAgregarProfesorActionPerformed
+        FrmAgregarProfesor frm = new FrmAgregarProfesor();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMAgregarProfesorActionPerformed
+
+    private void jMListaProfesoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMListaProfesoresActionPerformed
+        FrmListarProfesores frm = new FrmListarProfesores();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMListaProfesoresActionPerformed
+
+    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
+        FrmListarProgramas frm = new FrmListarProgramas();
+        frm.setVisible(true);
+    }//GEN-LAST:event_jMenuItem7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -204,8 +234,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenuItem jMAgregarProfesor;
     private javax.swing.JMenu jMAlumnos;
     private javax.swing.JMenu jMCerrar;
+    private javax.swing.JMenuItem jMListaProfesores;
     private javax.swing.JMenu jMMatriculas;
     private javax.swing.JMenu jMProfesores;
     private javax.swing.JMenu jMProgramas;
@@ -213,8 +245,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;

@@ -40,11 +40,11 @@ public class Programa {
         this.horas = horas;
     }
 
-    public Profesor getUnDocente() {
+    public Profesor getUnProfesor() {
         return unProfesor;
     }
 
-    public void setUnDocente(Profesor unDocente) {
+    public void setUnProfesor(Profesor unProfesor) {
         this.unProfesor = unProfesor;
     }
 
@@ -52,4 +52,5 @@ public class Programa {
     public String toString() {
         return this.getNombre();
     }   
+
 }
